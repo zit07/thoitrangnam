@@ -41,13 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-    'crispy_bootstrap4',
     'easy_thumbnails',
     'django_filters',
     'store',
     'cart',
-    'orders',
-    'bootstrap4'
+    'orders'
 ]
 
 LOGIN_URL = 'login'

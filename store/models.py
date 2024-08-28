@@ -33,9 +33,7 @@ class Product(models.Model):
     availibility = models.BooleanField(null=False, default=True)
 
     class Meta:
-        indexes = [
-            models.Index(fields=['id', 'slug']),
-        ]
+        index_together = ('id', 'slug')
         ordering = ('-created',)
 
     def __str__(self):
